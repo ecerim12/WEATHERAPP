@@ -1,0 +1,447 @@
+*{
+    margin : 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #9EB3C2;
+}
+header{
+    background-color:#21295C;
+    height:50px;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+.page-logo-div{
+    width:33%;
+}
+
+.page-title-div{
+    width:33%;
+}
+.page-link-div{
+    width:33%;
+}
+.page-logo-div p{
+    font-weight: bolder;
+    font-size: 32px;
+    font-family: 'Girassol', cursive;
+    color:#9EB3C2;
+}
+.page-title-div p{
+    text-align: center;
+    font-weight: bolder;
+    font-size:32px;
+    font-family: 'Lilita One', cursive;
+    color:#9EB3C2;
+}
+.page-link-div a {
+    float: right;
+    color:#9EB3C2;
+    font-size:32px;
+    text-decoration: none;
+}
+.container{
+    margin: 50px auto;
+    width:400px;
+    height:500px;
+    background-color:#065A82;
+    border:3px solid black;
+    border-radius: 10px;
+    position: relative;
+}
+
+.weather-icon-div{
+    display: inline-block;
+    height:30%;
+    width:40%
+}
+.weather-icon-div > img{
+    position: relative;
+    left:0%;
+    height:200px;
+    width:200px;
+    
+}
+.weather-text-div{
+    display:inline-block;
+    vertical-align: top;
+    height:20%;
+    width:50%;
+    margin-top:50px;
+}
+.weather-text-div > p{
+    position: relative;
+    font-size : 30px;
+    font-style: italic;
+    text-align:center;
+    font-family: 'Playfair Display', serif;
+    color:#9EB3C2;
+}
+.weather-text-div > span{
+    position: relative;
+    font-size : 50px;
+    font-style: italic;
+    left:20%;
+    font-family: 'Playfair Display', serif;
+    color:#9EB3C2;
+}
+.feels-like-div{
+    height:10%;
+    width:100%;
+}
+.feels-like-div p{
+    font-style: italic;
+    text-align: center;
+    font-size:20px;
+    font-family: 'Playfair Display', serif;
+    color:#9EB3C2;
+}
+.sunrise-div{
+    display:inline-block;
+    width:50%;
+}
+.sunset-div{
+    display: inline-block;
+    float:right;
+    width:50%;
+}
+.sunrise-div p {
+    font-weight: bold;
+    font-size:20px;
+    margin-left:75px;
+    font-family: 'Playfair Display', serif;
+    color:#9EB3C2;
+}
+.sunset-div p {
+    font-weight: bold;
+    font-size:20px;
+    margin-left:70px;
+    font-family: 'Playfair Display', serif;
+    color:#9EB3C2;
+}
+.sunrise-icon-div{
+    display:inline-block;
+    float:left;
+    width:50%;
+}
+.sunset-icon-div{
+    display: inline-block;
+    float:right;
+    width:50%;
+}
+.sunrise-icon-div img{
+    position: relative;
+    left:25%;
+    width:40%;
+    height:40%;
+}
+.sunset-icon-div img{
+    position: relative;
+    left:25%;
+    width:40%;
+    height:40%;
+}
+.wind-p{
+    font-weight: bold;
+    margin:20px;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    color:#9EB3C2;
+}
+.pressure-p{
+    font-weight: bold;
+    margin:20px;
+    font-size:20px;
+    font-family: 'Playfair Display', serif;
+    color:#9EB3C2;
+}
+#forecast-container-flex{
+    margin: 250px auto;
+    width:1250px;
+    height:400px;
+
+    background-color:#065A82;
+    border:3px solid black;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.forecast-div{
+    width:250px;
+    border-right:2px solid black;
+}
+.forecast-day-div{
+    background-color:#21295C;
+    height:50px;
+    border-bottom: 2px solid black;
+}
+.forecast-day-div > p{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 35px;
+    
+    font-family: 'Girassol', cursive;
+    color:#9EB3C2;
+}
+.forecast-day2-div{
+    background-color:#21295C;
+    height:50px;
+    border-bottom: 2px solid black;
+}
+.forecast-day2-div > p{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 35px;
+    font-family: 'Girassol', cursive;
+    color:#9EB3C2;
+}
+.forecast-day3-div{
+    background-color:#21295C;
+    height:50px;
+    border-bottom: 2px solid black;
+}
+.forecast-day3-div > p{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 35px;
+    font-family: 'Girassol', cursive;
+    color:#9EB3C2;
+}
+.forecast-day4-div{
+    background-color:#21295C;
+    height:50px;
+    border-bottom: 2px solid black;
+}
+.forecast-day4-div > p{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 35px;
+
+    font-family: 'Girassol', cursive;
+    color:#9EB3C2;
+}
+.forecast-day5-div{
+    background-color:#21295C;
+    height:50px;
+    border-bottom: 2px solid black;
+}
+.forecast-day5-div > p{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 35px;
+
+    font-family: 'Girassol', cursive;
+    color:#9EB3C2;
+}
+
+.forecast-icon-div{
+    height:175px;
+
+}
+.forecast-icon-div img{
+    position: relative;
+    top:10%;
+    left:20%;
+    width: 150px;
+    height: 150px;
+}
+.forecast-icon2-div{
+    height:175px;
+
+}
+.forecast-icon2-div img{
+    position: relative;
+    top:10%;
+    left:20%;
+    width: 150px;
+    height: 150px;
+}
+.forecast-icon3-div{
+    height:175px;
+
+}
+.forecast-icon3-div img{
+    position: relative;
+    top:10%;
+    left:20%;
+    width: 150px;
+    height: 150px;
+}
+.forecast-icon4-div{
+    height:175px;
+
+}
+.forecast-icon4-div img{
+    position: relative;
+    top:10%;
+    left:20%;
+    width: 150px;
+    height: 150px;
+}
+.forecast-icon5-div{
+    height:175px;
+
+}
+.forecast-icon5-div img{
+    position: relative;
+    top:10%;
+    left:20%;
+    width: 150px;
+    height: 150px;
+}
+.forecast-temperature-flex-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.forecast-min-temperature-div{
+   height:175px;
+   width:125px;
+   
+}
+.forecast-max-temperature-div{
+    height:175px;
+    width:125px;
+}
+.forecast-min-temperature-div > p{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 22px;
+    padding: 10px;
+    font-family: 'Girassol', cursive;
+    color:#9EB3C2;
+    margin-top:10px;
+}
+.forecast-max-temperature-div > p{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 22px;
+    padding: 10px;
+    font-family: 'Girassol', cursive;
+    color:#9EB3C2;
+    margin-top:10px;
+}
+.forecast-min-temperature2-div{
+    height:175px;
+    width:125px;
+    
+ }
+ .forecast-max-temperature2-div{
+     height:175px;
+     width:125px;
+ }
+ .forecast-min-temperature2-div > p{
+     text-align: center;
+     font-weight: bolder;
+     font-size: 22px;
+     padding: 10px;
+     font-family: 'Girassol', cursive;
+     color:#9EB3C2;
+     margin-top:10px;
+ }
+ .forecast-max-temperature2-div > p{
+     text-align: center;
+     font-weight: bolder;
+     font-size: 22px;
+     padding: 10px;
+     font-family: 'Girassol', cursive;
+     color:#9EB3C2;
+     margin-top:10px;
+ }
+ .forecast-min-temperature3-div{
+    height:175px;
+    width:125px;
+    
+ }
+ .forecast-max-temperature3-div{
+     height:175px;
+     width:125px;
+ }
+ .forecast-min-temperature3-div > p{
+     text-align: center;
+     font-weight: bolder;
+     font-size: 22px;
+     padding: 10px;
+     font-family: 'Girassol', cursive;
+     color:#9EB3C2;
+     margin-top:10px;
+ }
+ .forecast-max-temperature3-div > p{
+     text-align: center;
+     font-weight: bolder;
+     font-size: 22px;
+     padding: 10px;
+     font-family: 'Girassol', cursive;
+     color:#9EB3C2;
+     margin-top:10px;
+ }
+ .forecast-min-temperature4-div{
+    height:175px;
+    width:125px;
+    
+ }
+ .forecast-max-temperature4-div{
+     height:175px;
+     width:125px;
+ }
+ .forecast-min-temperature4-div > p{
+     text-align: center;
+     font-weight: bolder;
+     font-size: 22px;
+     padding: 10px;
+     font-family: 'Girassol', cursive;
+     color:#9EB3C2;
+     margin-top:10px;
+ }
+ .forecast-max-temperature4-div > p{
+     text-align: center;
+     font-weight: bolder;
+     font-size: 22px;
+     padding: 10px;
+     font-family: 'Girassol', cursive;
+     color:#9EB3C2;
+     margin-top:10px;
+ }
+ .forecast-min-temperature5-div{
+    height:175px;
+    width:125px;
+ }
+ .forecast-max-temperature5-div{
+     height:175px;
+     width:125px;
+ }
+ .forecast-min-temperature5-div > p{
+     text-align: center;
+     font-weight: bolder;
+     font-size: 22px;
+     padding: 10px;
+     font-family: 'Girassol', cursive;
+     color:#9EB3C2;
+     margin-top:10px;
+ }
+ .forecast-max-temperature5-div > p{
+     text-align: center;
+     font-weight: bolder;
+     font-size: 22px;
+     padding: 10px;
+     font-family: 'Girassol', cursive;
+     color:#9EB3C2;
+     margin-top:10px;
+ }
+footer{
+    background-color:#21295C;
+    height:50px;
+}
+footer h4{
+    text-align: center;
+    padding:15px;
+    font-family: 'Girassol', cursive;
+    color:#8797AF;
+}
